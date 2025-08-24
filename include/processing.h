@@ -6,11 +6,11 @@
 #include <stdint.h>
 
 enum Log_Type {
-    LOG_Success = 0,
-    LOG_Warning,
-    LOG_Error,
-    LOG_Fatal,
-    LOG_Failed,
+    LOG_TYPE_Success = 0,
+    LOG_TYPE_Warning,
+    LOG_TYPE_Error,
+    LOG_TYPE_Fatal,
+    LOG_TYPE_Failed,
 };
 
 /*

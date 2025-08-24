@@ -10,19 +10,19 @@ void write_log(const char *filepath, const char *message, const enum Log_Type le
     }
 
     switch(level) {
-        case LOG_Success: {
+        case LOG_TYPE_Success: {
             fprintf(file, "[SUCCESS] 🟢 %s\n", message);
         } break;
-        case LOG_Warning: {
+        case LOG_TYPE_Warning: {
             fprintf(file, "[WARNING] 🟡 %s\n", message);
         } break;
-        case LOG_Error: {
+        case LOG_TYPE_Error: {
             fprintf(file, "[ERROR] 🔴 %s\n", message);
         } break;
-        case LOG_Fatal: {
+        case LOG_TYPE_Fatal: {
             fprintf(file, "[FATAL] 🔴 %s\n", message);
         } break;
-        case LOG_Failed: {
+        case LOG_TYPE_Failed: {
             fprintf(file, "[FAILED] 🔴 %s\n", message);
         } break;
         default: {
